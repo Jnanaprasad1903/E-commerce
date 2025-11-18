@@ -10,9 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-import productRoutes from './routes/productRoutes.js';
-import userRoutes from './routes/userRoutes.js';
-import orderRoutes from './routes/orderRoutes.js';
+import productRoutes from './api/routes/productRoutes.js';
+import userRoutes from './api/routes/userRoutes.js';
+import orderRoutes from './api/routes/orderRoutes.js';
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
